@@ -2,6 +2,7 @@ class DockerHelpers < Formula
   homepage "https://github.com/chinthakagodawita/docker-helpers"
   url "https://github.com/chinthakagodawita/docker-helpers/archive/v0.0.5-alpha.2.tar.gz"
   sha256 "97c85eeeb7d4996c8f38cc5e1e1c1d06cd24c734daeea32ec5ca90b853725612"
+  head "https://github.com/chinthakagodawita/docker-helpers.git", branch: :experimental
 
   option "with-vbox", "Build with VirtualBox (via brew cask)"
   option "with-vagrant", "npm will not be installed"
@@ -12,13 +13,17 @@ class DockerHelpers < Formula
   depends_on "dinghy"
 
   def install
-    puts "installing!"
+    # Add npm to path.
+    ENV.prepend_path "PATH", "#{Formula["node"].opt_libexec}/npm/bin"
 
-    system "npm", "install -g"
-  end
+    # Install all node depedencies.
+    system "npm", "install"
 
-  def post_install
-    puts "yo"
+    # Install all in libexec.
+    libexec.install Dir["*"]
+
+    # Symlink main binary.
+    bin.install_symlink libexec/"bin/dh.js" => "dh"
   end
 
   def caveats
