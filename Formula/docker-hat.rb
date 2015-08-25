@@ -28,7 +28,7 @@ class DockerHat < Formula
 
   def caveats
     s = <<-EOS.undent
-      docker-helpers has been installed and is ready to go!
+      docker-hat has been installed and is ready to go!
       Simply run `dh init` in order to get everything setup and in tip-top shape
       for you to start running Docker containers.
 
