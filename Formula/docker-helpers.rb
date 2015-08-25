@@ -1,9 +1,9 @@
 class DockerHelpers < Formula
-  DH_VERSION="v0.0.5-alpha.5"
+  DH_VERSION="v0.0.5-alpha.6"
 
   homepage "https://github.com/chinthakagodawita/docker-helpers"
   url "https://github.com/chinthakagodawita/docker-helpers/archive/#{DH_VERSION}.tar.gz"
-  sha256 "53fec67103b04152ea9b43a62d232215836534bd64c26a59f01a6c9a2a643eb2"
+  sha256 "358e63e33d2ddcf855f4d445c903dd5d85ef445001bed1e831753141b1bb6e1d"
   head "https://github.com/chinthakagodawita/docker-helpers.git", branch: :experimental
   version DH_VERSION
 
