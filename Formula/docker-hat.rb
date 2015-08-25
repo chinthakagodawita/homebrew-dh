@@ -1,10 +1,10 @@
-class DockerHelpers < Formula
+class DockerHat < Formula
   DH_VERSION="v0.0.5-alpha.6"
 
-  homepage "https://github.com/chinthakagodawita/docker-helpers"
-  url "https://github.com/chinthakagodawita/docker-helpers/archive/#{DH_VERSION}.tar.gz"
+  homepage "https://github.com/chinthakagodawita/docker-hat"
+  url "https://github.com/chinthakagodawita/docker-hat/archive/#{DH_VERSION}.tar.gz"
   sha256 "358e63e33d2ddcf855f4d445c903dd5d85ef445001bed1e831753141b1bb6e1d"
-  head "https://github.com/chinthakagodawita/docker-helpers.git", branch: :experimental
+  head "https://github.com/chinthakagodawita/docker-hat.git", branch: :experimental
   version DH_VERSION
 
   depends_on "node"

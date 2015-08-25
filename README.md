@@ -1,9 +1,9 @@
 # homebrew-dh
-A homebrew formula for the [docker-helpers](https://github.com/chinthakagodawita/docker-helpers) package.
+A homebrew formula for the [docker-hat](https://github.com/chinthakagodawita/docker-hat) package.
 
-This installs all dependencies required by `docker-helpers`.
+This installs all dependencies required by `docker-hat`.
 
-Where necessary (e.g. with `brew cask` packages such as _vagrant_), dependencies are managed directly in `docker-helpers`.
+Where necessary dependencies are managed directly in `docker-hat`.
 
 This also includes a formula for the docker machine branch of [dinghy](https://github.com/codekitchen/dinghy).
 
@@ -15,10 +15,10 @@ brew tap chinthakagodawita/homebrew-dh
 
 then:
 ```bash
-brew install docker-helpers
+brew install docker-hat
 ```
 
 or for the experimental version
 ```bash
-brew install --HEAD docker-helpers
+brew install --HEAD docker-hat
 ```
