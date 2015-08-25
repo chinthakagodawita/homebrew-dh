@@ -1,7 +1,7 @@
 class DockerHelpers < Formula
   homepage "https://github.com/chinthakagodawita/docker-helpers"
-  url "https://github.com/chinthakagodawita/docker-helpers/archive/v0.0.5-alpha.3.tar.gz"
-  sha256 "ead89d99960ef16909b98aadd48911b021ee48db3c85f4c6ba70a2f499c1d62d"
+  url "https://github.com/chinthakagodawita/docker-helpers/archive/v0.0.5-alpha.4.tar.gz"
+  sha256 "bdf39165e9e5bfd09187e39d4411bec8f5e15d737f8c6993e02dd3feae40ba58"
   head "https://github.com/chinthakagodawita/docker-helpers.git", branch: :experimental
 
   option "with-vbox", "Build with VirtualBox (via brew cask)"
