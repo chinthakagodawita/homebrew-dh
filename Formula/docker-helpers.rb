@@ -7,9 +7,6 @@ class DockerHelpers < Formula
   head "https://github.com/chinthakagodawita/docker-helpers.git", branch: :experimental
   version DH_VERSION
 
-  option "with-vbox", "Build with VirtualBox (via brew cask)"
-  option "with-vagrant", "npm will not be installed"
-
   depends_on "node"
   depends_on "docker"
   depends_on "docker-machine"
@@ -30,18 +27,13 @@ class DockerHelpers < Formula
   end
 
   def caveats
-    s = ""
+    s = <<-EOS.undent
+      docker-helpers has been installed and is ready to go!
+      Simply run `dh init` in order to get everything setup and in tip-top shape
+      for you to start running Docker containers.
 
-    if build.with? "vbox"
-      s += <<-EOS.undent
-        stuff
-      EOS
-    else
-      s += <<-EOS.undent
-        some other stuff
-      EOS
-    end
-
+      Run `dh` to see a full list of commands.
+    EOS
     s
   end
 end
