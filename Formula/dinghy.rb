@@ -1,8 +1,8 @@
 require 'formula'
 
 class Dinghy < Formula
-  homepage 'https://github.com/codekitchen/dinghy'
-  head 'https://github.com/codekitchen/dinghy.git', branch: :machine
+  homepage 'https://github.com/chinthakagodawita/dinghy'
+  head 'https://github.com/chinthakagodawita/dinghy.git', branch: 'machine-experimental'
 
   depends_on 'docker'
   depends_on 'docker-machine'
