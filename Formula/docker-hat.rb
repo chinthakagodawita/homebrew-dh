@@ -1,9 +1,9 @@
 class DockerHat < Formula
-  DH_VERSION="v0.0.5"
+  DH_VERSION="v0.0.6"
 
   homepage "https://github.com/chinthakagodawita/docker-hat"
   url "https://github.com/chinthakagodawita/docker-hat/archive/#{DH_VERSION}.tar.gz"
-  sha256 "e878d9ca8c3e2f8daa7140fa5a126681748d63801c0747981df3fa436112f569"
+  sha256 "5ef4d0ae729879ffb00c15635b4db74f992c31960bcf2c28ce0193c6d159aa34"
   head "https://github.com/chinthakagodawita/docker-hat.git", branch: :experimental
   version DH_VERSION
 
