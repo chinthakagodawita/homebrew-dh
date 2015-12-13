@@ -4,8 +4,8 @@ DINGHY_VERSION='4.0.8-fork.1'
 
 class Dinghy < Formula
   homepage 'https://github.com/chinthakagodawita/dinghy'
-  url  'https://github.com/chinthakagodawita/dinghy.git', tag: "v#{DINGHY_VERSION}"
-  head 'https://github.com/chinthakagodawita/dinghy.git', branch: :fork
+  url  'https://github.com/chinthakagodawita/dinghy.git', :tag => "v#{DINGHY_VERSION}"
+  head 'https://github.com/chinthakagodawita/dinghy.git', :branch => :fork
   version DINGHY_VERSION
 
   depends_on 'docker'

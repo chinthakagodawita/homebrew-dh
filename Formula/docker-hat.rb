@@ -4,7 +4,7 @@ class DockerHat < Formula
   homepage "https://github.com/chinthakagodawita/docker-hat"
   url "https://github.com/chinthakagodawita/docker-hat/archive/#{DH_VERSION}.tar.gz"
   sha256 "90faae324d32a5d892864304169a793b7da1371d63dae96c3de26421332a8cbb"
-  head "https://github.com/chinthakagodawita/docker-hat.git", branch: :experimental
+  head "https://github.com/chinthakagodawita/docker-hat.git", :branch => :experimental
   version DH_VERSION
 
   depends_on "node"
