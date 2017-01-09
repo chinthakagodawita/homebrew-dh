@@ -10,7 +10,7 @@ class Dinghy < Formula
 
   depends_on 'docker'
   depends_on 'docker-machine'
-  depends_on 'unfs3'
+  depends_on "homebrew/boneyard/unfs3"
 
   def install
     bin.install "bin/dinghy"
