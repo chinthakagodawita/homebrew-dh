@@ -25,7 +25,7 @@ class Unfs3 < Formula
 
   def install
     ENV.deparallelize # Build is not parallel-safe
-    system "./bootstrap" if build.head?
+    system "./bootstrap"
     system "./configure", "--disable-debug", "--disable-dependency-tracking",
                           "--prefix=#{prefix}"
     system "make"
